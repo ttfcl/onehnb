@@ -1,0 +1,249 @@
+@font-face {
+    font-family: "gFont";
+    src: url("../../font/Pretendard-Regular.ttf") format('truetype');
+}
+* {
+    box-sizing: border-box;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-family: "gFont";
+}
+body {
+    box-sizing: border-box;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+.col-12 {
+    padding: 0px;
+}
+
+/*네비바--*/
+nav {
+    min-height: 100px;
+}
+#top_logo {
+    margin-left: 5%;
+}
+.top-margin {
+    margin-right: 1%;
+}
+#navbar {
+    float: left;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+}
+.nav-link {
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+}
+.navbar-nav {
+    background-color: black;
+    border-radius: 10rem;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.nav-link:hover {
+    color: #cf5c5c;
+}
+@media (max-width : 991px) {
+    .nav-item {
+        margin-left: 10px;
+    }
+    #navbar {
+        background-color: white;
+    }
+    .nav-link {
+        color: black;
+        background-color: transparent;
+    }
+    .navbar-nav {
+        background-color: transparent;
+        padding: 0px;
+    }
+}
+.dropdown-item:hover {
+    color: #cf5c5c;
+}
+.navbar-toggler-icon {
+    background-color: aliceblue;
+}
+.hide {
+    display: none;
+}
+/*네비바--*/
+
+
+/*섹션1-----*/
+.section1 {
+    display: flex;
+}
+.section1Left {
+    width: 50%;
+    display: flex;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    padding-left: 20px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: left;
+    font-size: 24px;
+    background-color: #fd6aa8;
+    color: white;
+    font-weight: 700;
+}
+
+.section1Right {
+    width: 50%;
+    background-image: url(../page3/image/bg1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 70%;
+    background-position:top left;
+}
+@media (max-width: 1100px) {
+    .section1 {
+        display: block;
+    }
+    .section1Left, .section1Right {
+        width: 100%;
+    }
+    .section1Right  {
+        height: 200px;
+        background-attachment: scroll;
+        background-position: center;
+        background-size: 100%;
+    }
+}
+/*섹션1-----*/
+
+/*섹션 3-------------------*/
+.section3 {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 150px;
+    padding-bottom: 150px;
+    display: flex;
+    justify-content: space-around;
+}
+.section3LeftBox > img {
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+}
+.section3LeftBoxContent {
+    margin-top: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    padding-top: 50px;
+    border-top: 5px solid #ff7f7f;
+}
+.section3RightBox {
+    width: 40%;
+    min-width: 300px;
+    padding-left: 10px;
+}
+.section3RightBoxContent {
+    width: 100%;
+    margin-top: 20px;
+}
+.section3RightBoxContent > p {
+    font-size: 18px;
+}
+.section3RightBoxContent > input {
+    width: 100%;
+    height: 50px;
+    border: 1px solid #ff7f7f;
+    padding-left: 5px;
+}
+.red {
+    color: red;
+}
+#문의내용 {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ff7f7f;
+}
+#전송버튼 {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    color: #ff7f7f;
+    border: 1px solid #ff7f7f;
+    background-color: white;
+}
+#전송버튼:hover {
+    color: white;
+    background-color: #ff7f7f;
+}
+@media (max-width: 992px) {
+    .section3 {
+        display: block;
+    }
+    .section3RightBox {
+        width: 80%;
+    }
+}
+.hide {
+    display: none;
+}
+/*섹션 3-------------------*/
+
+/*footer*/
+footer {
+    width: 100%;
+    background-color: black;
+}
+footer > .footer_r > .teck_footer_logo > p {
+    font-size: 12px;
+    color: whitesmoke;
+}
+.footer_r {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+.teck {
+    display: flex;
+    justify-content: left;
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+}
+.teck_button {
+    font-size: 14px;
+    margin-right: 25px;
+    margin-top: 25px;
+    color: gray;
+    text-align: center;
+}
+.teck_button:hover {
+    color: white;
+    background-color: gray;
+}
+.teck_footer_logo {
+    width: 100%;
+}
+.teck_logo {
+    width: 100%;
+    margin-top: 25px;
+    text-align: right;
+}
+@media (max-width: 992px) {
+    .teck_logo {
+        display: none;
+    }
+}
+a {
+    text-decoration: none;
+}
