@@ -2,6 +2,10 @@
     font-family: "gFont";
     src: url("font/Pretendard-Regular.ttf") format('truetype');
 }
+@font-face {
+    font-family: "rFont";
+    src: url("font/RobotoSlab-VariableFont_wght.ttf") format('truetype');
+}
 * {
     box-sizing: border-box;
     border: 0px;
@@ -98,10 +102,33 @@ nav {
     color: white;
 }
 .section1 > div {
-    background: linear-gradient(to top, rgba(139, 139, 139, 0.658) 50%,rgba(139, 139, 139, 0.658) 50%);
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.5) 50%,rgba(0, 0, 0, 0.5) 50%);
 }
 .section1 > div > span {
     color: #ffbedf;
+}
+.section1Title {
+    font-family: "rFont";
+    font-size: 48px;
+    font-weight: normal;
+    margin-bottom: -20px;
+}
+.section1Title2 {
+    font-size: 32px;
+    font-weight: normal;
+    margin-top: -10px;
+}
+@media (max-width: 992px) {
+    .section1 {
+        font-size: 32px;
+    }
+    .section1Title {
+        margin-bottom: 0px;
+        font-size: 24px;
+    }
+    .section1Title2 {
+        display: none;
+    }
 }
 /*섹션1--*/
 
@@ -126,8 +153,11 @@ nav {
     white-space:nowrap;
     padding-right:50px;
   }
-  .marquee > p > span {
+  .marquee > p > .bar1 {
     margin-right: 300px;
+  }
+  .bar2 {
+    font-family: "rFont";
   }
   .marquee p {
     margin:0;
