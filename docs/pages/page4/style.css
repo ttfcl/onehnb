@@ -1,0 +1,229 @@
+@font-face {
+    font-family: "gFont";
+    src: url("../../font/Pretendard-Regular.ttf") format('truetype');
+}
+* {
+    box-sizing: border-box;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+    font-family: "gFont";
+}
+body {
+    box-sizing: border-box;
+    border: 0px;
+    padding: 0px;
+    margin: 0px;
+}
+.col-12 {
+    padding: 0px;
+}
+
+/*네비바--*/
+nav {
+    min-height: 100px;
+}
+#top_logo {
+    margin-left: 5%;
+}
+.top-margin {
+    margin-right: 1%;
+}
+#navbar {
+    float: left;
+    position: fixed;
+    top: 0px;
+    z-index: 2;
+}
+.nav-link {
+    font-size: 24px;
+    color: white;
+    font-weight: 700;
+}
+.navbar-nav {
+    background-color: black;
+    border-radius: 10rem;
+    padding-left: 50px;
+    padding-right: 50px;
+}
+.nav-link:hover {
+    color: #cf5c5c;
+}
+@media (max-width : 991px) {
+    .nav-item {
+        margin-left: 10px;
+    }
+    #navbar {
+        background-color: white;
+    }
+    .nav-link {
+        color: black;
+        background-color: transparent;
+    }
+    .navbar-nav {
+        background-color: transparent;
+        padding: 0px;
+    }
+}
+.dropdown-item:hover {
+    color: #cf5c5c;
+}
+.navbar-toggler-icon {
+    background-color: aliceblue;
+}
+.hide {
+    display: none;
+}
+/*네비바--*/
+
+
+/*섹션1-----*/
+.section1 {
+    display: flex;
+}
+.section1Left {
+    width: 50%;
+    display: flex;
+    padding-top: 200px;
+    padding-bottom: 200px;
+    flex-direction: column;
+    justify-content: center;
+    text-align: right;
+    font-size: 32px;
+    background-color: #ff7a2d;
+    color: white;
+    font-weight: 700;
+}
+
+.section1Right {
+    width: 50%;
+    background-image: url(image/bg1.png);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 70%;
+    background-position:top right;
+}
+@media (max-width: 1100px) {
+    .section1 {
+        display: block;
+    }
+    .section1Left, .section1Right {
+        width: 100%;
+    }
+    .section1Right  {
+        height: 200px;
+        background-attachment: scroll;
+        background-position: center;
+        background-size: 100%;
+    }
+}
+/*섹션1-----*/
+
+/*섹션2----*/
+.section2Title {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 48px;
+    font-weight: 700;
+}
+/*섹션2------*/
+
+
+/*섹션5-----*/
+.section4 {
+    text-align: center;
+}
+.section4Text {
+    font-size: 20px;
+}
+.section5Imgbox {
+    width: 70%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin-left: auto;
+    margin-right: auto;
+}
+.section5Imgbox > img {
+    margin-top: 20px;
+}
+/*섹션5------*/
+
+/*섹션6-------*/
+.section6Imgbox {
+    display: flex;
+}
+.google {
+    width: 50%;
+}
+.logoBox {
+    width: 50%;
+}
+@media (max-width: 992px) {
+    .section6Imgbox {
+        flex-direction: column;
+    }
+    .logoBox {
+        width: 100%;
+    }
+    .google {
+        width: 100%;
+    }
+    .logoBox > img {
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        display: block;
+    }
+}
+/*섹션6-------*/
+
+/*footer*/
+footer {
+    width: 100%;
+    background-color: black;
+}
+footer > .footer_r > .teck_footer_logo > p {
+    font-size: 12px;
+    color: whitesmoke;
+}
+.footer_r {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: center;
+}
+.teck {
+    display: flex;
+    justify-content: left;
+    border-bottom: 1px solid gray;
+    margin-bottom: 20px;
+}
+.teck_button {
+    font-size: 14px;
+    margin-right: 25px;
+    margin-top: 25px;
+    color: gray;
+    text-align: center;
+}
+.teck_button:hover {
+    color: white;
+    background-color: gray;
+}
+.teck_footer_logo {
+    width: 100%;
+}
+.teck_logo {
+    width: 100%;
+    margin-top: 25px;
+    text-align: right;
+}
+@media (max-width: 992px) {
+    .teck_logo {
+        display: none;
+    }
+}
+a {
+    text-decoration: none;
+}

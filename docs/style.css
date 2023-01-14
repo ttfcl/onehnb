@@ -75,6 +75,7 @@ nav {
 .hide {
     display: none;
 }
+
 /*네비바--*/
 
 /*섹션1--*/
@@ -106,13 +107,13 @@ nav {
 
 /*섹션2--*/
 .section2 {
-    background-color: #eca8c4;
+    background-color: black;
     display: flex;
     flex-direction: column;
     justify-content: center;
     color: white;
     font-size: 24px;
-    font-weight: 700;
+    font-weight: 500;
 }
 .marquee {
     padding:0.5em 0;
@@ -249,7 +250,8 @@ nav {
 }
 .section4Left {
     width: 30%;
-    background-color: #ffb7af;
+    background-color: black;
+    color: white;
 }
 .section4LeftText {
     margin-left: auto;
@@ -267,7 +269,7 @@ nav {
 .section4RigthImg {
     width: 100%;
     height: 500px;
-    background-image: url(image/blood-plum-4119543_1920.jpg);
+    background-image: url(image/골드메인.gif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -318,10 +320,11 @@ nav {
 }
 .section5left {
     width: 50%;
-    animation-name: changeColor;
+    background-color: #f56544;
+    /* animation-name: changeColor;
     animation-duration: 5s;
     animation-iteration-count: infinite;
-    animation-direction: alternate;
+    animation-direction: alternate; */
 }
 .section5Rigth {
     width: 50%;

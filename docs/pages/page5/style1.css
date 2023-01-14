@@ -163,6 +163,11 @@ nav {
 .red {
     color: red;
 }
+#이메일 {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ff7f7f;
+}
 #문의내용 {
     width: 100%;
     height: 200px;

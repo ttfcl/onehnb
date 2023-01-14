@@ -35,11 +35,11 @@ const master = () => {
     gesipanToptime.textContent = questionList[questionList.length - masterKey].time
 
     var 템플릿 = `문의날짜: ${questionList[questionList.length - masterKey].time}</br>
-    문의제목: ${questionList[questionList.length - masterKey].회사명}</br>
+    화장품 시작한지 [${questionList[questionList.length - masterKey].회사명}] 되었습니다.</br>
     담당자 성함: ${questionList[questionList.length - masterKey].담당자}</br>
     전화번호: ${questionList[questionList.length - masterKey].연락처}</br>
-    이메일: ${questionList[questionList.length - masterKey].이메일}</br>
-    문의내용: </br>${questionList[questionList.length - masterKey].content}</br>`
+    온라인, 오프라인사업에서 고민되는 것은 </br>"${questionList[questionList.length - masterKey].이메일}"입니다.</br>
+    마케팅을 했으나 매출이 안오른 경험은: </br>"${questionList[questionList.length - masterKey].content}"입니다.</br>`
     $(".gesipan_content").append(템플릿)
   }   
   render()
