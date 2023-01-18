@@ -144,6 +144,10 @@ nav {
     margin-top: 20px;
     margin-bottom: 20px;
 }
+.section2 > img:hover {
+    filter: contrast(70%);
+    transition: 0.5s;
+}
 @media (max-width: 600px) {
     .section2 > img  {
         width: 100%;
