@@ -98,11 +98,9 @@ nav {
 
 .section1Right {
     width: 50%;
-    background-image: url(image/bg1.png);
+    background-image: url(image/원숭이.gif);
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 70%;
-    background-position:top right;
+    background-size: cover;
 }
 @media (max-width: 700px){
     .section1Left {
@@ -131,7 +129,7 @@ nav {
     display: flex;
 }
 .section3Left {
-    width: 55%;
+    width: 50%;
     background-image: url(image/notebook.png);
     background-size: cover;
     background-position: center;
@@ -139,7 +137,7 @@ nav {
     min-height: 400px;
 }
 .section3Left2 {
-    width: 55%;
+    width: 50%;
     background-image: url(image/notebook2.png);
     background-size: cover;
     background-position: center;
@@ -147,7 +145,7 @@ nav {
     min-height: 400px;
 }
 .section3Left3 {
-    width: 55%;
+    width: 50%;
     background-image: url(image/notebook3.png);
     background-size: cover;
     background-position: center;

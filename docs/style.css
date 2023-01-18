@@ -11,7 +11,6 @@
     border: 0px;
     padding: 0px;
     margin: 0px;
-    font-family: "gFont";
 }
 body {
     box-sizing: border-box;
@@ -19,6 +18,7 @@ body {
     padding: 0px;
     margin: 0px;
     height: 2000px;
+    font-family: "gFont";
 }
 .col-12 {
     padding: 0px;
@@ -27,9 +27,6 @@ body {
 /*네비바--*/
 nav {
     min-height: 100px;
-}
-#top_logo {
-    margin-left: 5%;
 }
 .top-margin {
     margin-right: 1%;
@@ -69,6 +66,13 @@ nav {
         background-color: transparent;
         padding: 0px;
     }
+    #top_logo {
+        margin-left: 5%;
+    }
+}
+.navbar-brand {
+    background-color: white;
+    border-radius: 10px;
 }
 .dropdown-item:hover {
     color: #cf5c5c;
@@ -87,7 +91,7 @@ nav {
     padding-top: 150px;
     padding-bottom: 150px;
     height: calc(100vh - 100px);
-    background-image: url(image/메인페이지\ 사진.png);
+    background-image: url(image/골드메인.gif);
     background-position: fixed;
     background-repeat: no-repeat;
     background-size: cover;
@@ -213,20 +217,28 @@ nav {
 }
 .section3Left {
     width: 45%;
-    background-image: url(image/에센스13.jpg);
+    background-image: url(image/사무실.jpg);
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     min-height: 400px;
 }
+@font-face {
+    font-family: "tFont";
+    src: url("font/Pretendard-Bold.ttf") format('truetype');
+}
 .section3Rigth {
+    font-family: "tFont";
     width: 55%;
     padding: 100px;
 }
 .section3RigthTitle {
-    font-size: 32px;
+    font-size: 42px;
     font-weight: 700;
     margin-bottom: 25px;
+}
+.section3RigthText {
+    font-size: 24px;
 }
 .section3buttonBox {
     display: flex;
@@ -237,6 +249,7 @@ nav {
     width: 100px;
     height: 50px;
     margin-top: 20px;
+    font-size: 18px;
     text-align: center;
     margin-left: 20px;
     margin-right: 20px;
@@ -282,16 +295,24 @@ nav {
     width: 30%;
     background-color: black;
     color: white;
+    overflow: hidden;
 }
 .section4LeftText {
     margin-left: auto;
     margin-right: auto;
-    margin-top: 200px;
     margin-bottom: auto;
     width: fit-content;
-    rotate: 270deg;
     font-size: 48px;
     font-weight: 700;
+    width: 200%;
+    height: 100%;
+    margin-left: -300px;
+    rotate: 270deg;
+    background-image: url(image/growing.gif);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow: hidden;
 }
 .section4Rigth {
     width: 70%;
@@ -299,7 +320,7 @@ nav {
 .section4RigthImg {
     width: 100%;
     height: 500px;
-    background-image: url(image/골드메인.gif);
+    background-image: url(image/마지막.gif);
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -327,6 +348,8 @@ nav {
         rotate: 0deg;
         padding-top: 20px;
         padding-bottom: 20px;
+        height: 300px;
+        margin-left: 0px;
     }
 }
 .section4RigthLink {

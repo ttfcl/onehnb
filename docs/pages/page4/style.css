@@ -97,11 +97,9 @@ nav {
 
 .section1Right {
     width: 50%;
-    background-image: url(image/bg1.png);
+    background-image: url(image/사무실.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 70%;
-    background-position:top right;
+    background-size: cover;
 }
 @media (max-width: 1100px) {
     .section1 {
@@ -152,9 +150,10 @@ nav {
 /*섹션6-------*/
 .section6Imgbox {
     display: flex;
+    justify-content: center;
 }
 .google {
-    width: 50%;
+    width: 30%;
 }
 .logoBox {
     width: 50%;

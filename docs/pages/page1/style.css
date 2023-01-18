@@ -24,9 +24,6 @@ body {
 nav {
     min-height: 100px;
 }
-#top_logo {
-    margin-left: 5%;
-}
 .top-margin {
     margin-right: 1%;
 }
@@ -65,6 +62,9 @@ nav {
         background-color: transparent;
         padding: 0px;
     }
+    #top_logo {
+        margin-left: 5%;
+    }
 }
 .dropdown-item:hover {
     color: #cf5c5c;
@@ -74,6 +74,10 @@ nav {
 }
 .hide {
     display: none;
+}
+.navbar-brand {
+    background-color: white;
+    border-radius: 10px;
 }
 /*네비바--*/
 
@@ -98,11 +102,11 @@ nav {
 
 .section1Right {
     width: 50%;
-    background-image: url(image/bg1.png);
+    background-image: url(image/bg1.jpg);
     background-repeat: no-repeat;
-    background-attachment: fixed;
     background-size: 70%;
-    background-position:top left;
+    background-position: center;
+    background-size: cover;
 }
 @media (max-width: 700px){
     .section1Left {
@@ -135,7 +139,7 @@ nav {
     justify-content: space-around;
 }
 .section2 > img {
-    width: 360px;
+    width: 480px;
     height: 100%;
     margin-top: 20px;
     margin-bottom: 20px;
