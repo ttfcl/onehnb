@@ -23,9 +23,6 @@ body {
 nav {
     min-height: 100px;
 }
-#top_logo {
-    margin-left: 5%;
-}
 .top-margin {
     margin-right: 1%;
 }
@@ -64,6 +61,9 @@ nav {
         background-color: transparent;
         padding: 0px;
     }
+    #top_logo {
+        margin-left: 5%;
+    }
 }
 .dropdown-item:hover {
     color: #cf5c5c;
@@ -74,12 +74,25 @@ nav {
 .hide {
     display: none;
 }
+.navbar-brand {
+    background-color: white;
+    border-radius: 10px;
+}
 /*네비바--*/
 
 
 /*섹션1-----*/
 .section1 {
     display: flex;
+}
+@keyframes color {
+    from {
+        color: transparent;
+      }
+    
+      to {
+        color: white;
+      }
 }
 .section1Left {
     width: 50%;
@@ -94,6 +107,9 @@ nav {
     background-color: black;
     color: white;
     font-weight: 700;
+    animation-duration: 2s;
+    animation-name: color;
+    animation-iteration-count: 1;
 }
 
 .section1Right {
@@ -110,10 +126,7 @@ nav {
         width: 100%;
     }
     .section1Right  {
-        height: 200px;
-        background-attachment: scroll;
-        background-position: center;
-        background-size: 100%;
+        height: 500px;
     }
 }
 /*섹션1-----*/

@@ -18,13 +18,9 @@ body {
 .col-12 {
     padding: 0px;
 }
-
 /*네비바--*/
 nav {
     min-height: 100px;
-}
-#top_logo {
-    margin-left: 5%;
 }
 .top-margin {
     margin-right: 1%;
@@ -64,6 +60,9 @@ nav {
         background-color: transparent;
         padding: 0px;
     }
+    #top_logo {
+        margin-left: 5%;
+    }
 }
 .dropdown-item:hover {
     color: #cf5c5c;
@@ -74,12 +73,25 @@ nav {
 .hide {
     display: none;
 }
+.navbar-brand {
+    background-color: white;
+    border-radius: 10px;
+}
 /*네비바--*/
 
 
 /*섹션1-----*/
 .section1 {
     display: flex;
+}
+@keyframes color {
+    from {
+        color: transparent;
+      }
+    
+      to {
+        color: white;
+      }
 }
 .section1Left {
     width: 50%;
@@ -91,11 +103,18 @@ nav {
     justify-content: center;
     text-align: left;
     font-size: 24px;
-    background-color: #fd6aa8;
+    background-color: black;
     color: white;
     font-weight: 700;
+    animation-duration: 2s;
+    animation-name: color;
+    animation-iteration-count: 1;
 }
-
+@media (max-width: 720px) {
+    .section1Left {
+        font-size: 18px;
+    }
+}
 .section1Right {
     width: 50%;
     background-image: url(image/골드박스.png);
@@ -110,11 +129,8 @@ nav {
     .section1Left, .section1Right {
         width: 100%;
     }
-    .section1Right  {
-        height: 200px;
-        background-attachment: scroll;
-        background-position: center;
-        background-size: 100%;
+    .section1Right {
+        height: 500px;
     }
 }
 /*섹션1-----*/
@@ -135,6 +151,11 @@ nav {
     margin-left: 20px;
     margin-right: 20px;
     margin-top: 20px;
+}
+@media (max-width: 600px) {
+    .section2BrandBox > img, .section2BrandBox2 > img {
+        width: 60px;
+    } 
 }
 .section2BrandBox2 {
     width: 70%;
