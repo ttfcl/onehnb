@@ -158,6 +158,12 @@ nav {
 }
 .section5Imgbox > img {
     margin-top: 20px;
+    width: 400px;
+}
+@media (max-width: 762px) {
+    .section5Imgbox > img {
+        width: 100%;
+    }
 }
 /*섹션5------*/
 
