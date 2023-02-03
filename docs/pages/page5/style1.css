@@ -184,6 +184,11 @@ nav {
     height: 200px;
     border: 1px solid #ff7f7f;
 }
+.content {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ff7f7f;
+}
 #전송버튼 {
     width: 100%;
     height: 50px;
@@ -198,6 +203,24 @@ nav {
     background-color: white;
 }
 #전송버튼:hover {
+    color: white;
+    background-color: #ff7f7f;
+}
+.전송버튼 {
+    width: 100%;
+    height: 50px;
+    margin-top: 20px;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 18px;
+    color: #ff7f7f;
+    border: 1px solid #ff7f7f;
+    background-color: white;
+}
+.전송버튼:hover {
     color: white;
     background-color: #ff7f7f;
 }

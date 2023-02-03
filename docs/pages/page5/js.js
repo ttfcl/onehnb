@@ -29,19 +29,19 @@ var firebaseConfig = {
 
 전송버튼.onclick = () => {
     if(회사명.value === '') {
-        alert("회사명을 입력해주세요.")
+        alert("빈 칸이 있습니다.")
     }else {
         if(담당자.value === '') {
-            alert("담당자 성함을 입력해주세요.")
+            alert("빈 칸이 있습니다.")
         }else {
             if(연락처.value === '') {
-                alert("연락처를 입력해주세요.")
+                alert("빈 칸이 있습니다.")
             }else {
                 if(이메일.value === '') {
-                    alert("이메일을 입력하세요.")
+                    alert("빈 칸이 있습니다.")
                 }else {
                     if(문의내용.value === '') {
-                        alert("문의내용을 입력하세요")
+                        alert("빈 칸이 있습니다.")
                     } else {
                         let directer = '1'  
                         let index = 1

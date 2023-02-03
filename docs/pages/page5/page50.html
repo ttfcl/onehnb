@@ -65,7 +65,7 @@
         모든 분들의 문의를 기다립니다.
       </div>
     </div>
-    <div class="section3RightBox">
+    <!-- <div class="section3RightBox">
       <div class="section3RightBoxContent">
         <p>화장품 시작한지 얼마나 되셨습니까 ?<span class="red"> *</span></p>
         <input type="text" id="회사명" placeholder="자유롭게 입력해주세요.">
@@ -90,9 +90,42 @@
         <p><span class="red"data-bs-toggle="modal" data-bs-target="#exampleModal1">개인정보처리방침</span>을 읽고 이에 동의합니다.</p>
       </div>   
       <div id="전송버튼">CONTACT</div>
+    </div> -->
+    <div class="section3RightBox">
+      <form class="gform" action="https://script.google.com/macros/s/AKfycbzAqzCWp0fhl--l8y243ZjqHAet2FhR19I5yK_mX29pjdIDuoDMgsY0XrZdxGl0T5On0Q/exec" method="POST" data-email="jklee@onehnb.com">
+        <fieldset>
+          <div class="box-input section3RightBoxContent">
+            <p>담당자<span class="red"> *</span></p>
+            <input type="text" id="userName" name="담당자성함" placeholder="담당자성함" required>
+          </div>
+          <div class="box-input section3RightBoxContent">
+            <p>연락처<span class="red"> *</span></p>
+            <input type="text" id="userEmail" name="전화번호" placeholder="기호 '-'를 제외한 전화번호" required>
+          </div>
+          <div class="box-input section3RightBoxContent">
+            <p>화장품 시작한지 얼마나 되셨습니까 ?<span class="red"> *</span></p>
+            <input type="text" id="userEmail" name="화장품을 시작한지 몇 년 되었는지?" placeholder="자유롭게 입력해주세요." required>
+          </div>
+          <div class="box-input section3RightBoxContent">
+            <p>온라인, 오프라인사업에서 고민되시는게 어떤 것 일까요?<span class="red"> *</span></p>
+            <textarea class="content" name="고민내용" id="userMessage2" required></textarea>
+          </div>
+          <div class="box-input section3RightBoxContent">
+            <p>마케팅을 했으나 매출이 안오른 경험있으신가요?<span class="red"> *</span></p>
+            <textarea class="content" name="매출이 안오른 경험유무" id="userMessage3" required></textarea>
+          </div>
+          <div class="box-input">
+            <button type="submit" class="btn-send 전송버튼">메일 보내기</button>
+          </div>
+          <div style="display:none" class="thankyou_message">
+            <!-- You can customize the thankyou message by editing the code below -->
+            <p style="font-size: 18px; text-align: center;">연락주셔서 감사합니다. 빠른 시일 내에 답변 드리겠습니다.</p>
+            </h2>
+           </div>
+        </fieldset>
+      </form>
     </div>
   </div>  
-  
 
   <footer> 
     <div class="footer_r">
@@ -164,7 +197,7 @@
   </div>
 
 
-
+  <script data-cfasync="false" type="text/javascript" src="form-submission-handler.js"></script>
   <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
   <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-app.js"></script>
   <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-auth.js"></script>
@@ -172,7 +205,7 @@
   <script src="https://www.gstatic.com/firebasejs/8.6.5/firebase-storage.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.5/dist/umd/popper.min.js" integrity="sha384-Xe+8cL9oJa6tN/veChSP7q+mnSPaj5Bcu9mPX5F5xIGE0DVittaqT5lorf0EI7Vk" crossorigin="anonymous"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.min.js" integrity="sha384-kjU+l4N0Yf4ZOJErLsIcvOU2qSb74wXpOhqTvwVx3OElZRweTnQ6d31fXEoRD1Jy" crossorigin="anonymous"></script>
-  <script src="js.js"></script>
+  <!-- <script src="js.js"></script> -->
   <script src="../../nav.js"></script>
   <!-- <script src="../../lock.js"></script> -->
 </body>
